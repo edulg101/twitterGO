@@ -24,8 +24,6 @@ func main() {
 
 	fmt.Printf("Escutando na porta %d \n", config.Port)
 
-	fmt.Println(config.StringConexaoBanco)
-
 	r := router.Gerar()
 
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", config.Port), r))

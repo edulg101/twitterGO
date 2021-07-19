@@ -11,6 +11,7 @@ type Usuarios struct {
 }
 
 func NovoRespositorioDeUsuarios(db *sql.DB) *Usuarios {
+
 	return &Usuarios{db}
 }
 
